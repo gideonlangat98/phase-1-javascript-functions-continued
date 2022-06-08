@@ -4,5 +4,11 @@ function saturdayFun(toDo = "roller-skate"){
     }
 
 let mondayWork = function(toDo = "go to the office"){
-    return `This Monday, I will ${toDo}!`;
+    return `This Monday, I will ${toDo}.`;
+}
+
+let wrapAdjective = function(emphatic = "*") {
+    return function(adjective = "special"){
+    return `You are ${emphatic}${adjective}${emphatic}!`;
+    }
 }
